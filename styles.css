@@ -51,5 +51,5 @@ body {
 }
 
 .move-left {
-    animation: move-left 3s forwards infinite alternate; /* Включаем анимацию */
+    animation: move-left 3s infinite alternate; /* Включаем анимацию */
 }
