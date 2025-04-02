@@ -46,19 +46,10 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100vw); /* Перемещаем машину за экран */
+        transform: translateX(-40vw); /* Перемещаем машину за экран */
     }
 }
 
-.car {
-    position: relative;
-    width: 1000px;
-    height: 400px;
-    background: url('skyline.png') no-repeat center/contain;
-    cursor: pointer;
-    transition: transform 1s ease-in-out; /* Для плавности анимации */
-}
-
 .move-left {
-    animation: move-left 5s forwards; /* Включаем анимацию */
+    animation: move-left 3s forwards infinite alternate; /* Включаем анимацию */
 }
