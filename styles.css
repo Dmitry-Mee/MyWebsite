@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB;
+    overflow: hidden;
+}
+.car {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    background: url('skyline.png') no-repeat center/contain;
+    cursor: pointer;
+}
+.smoke-container {
+    position: absolute;
+    top: 27vh; /* Меняем на нужную позицию, например, top: 40px; или left: 100px; */
+    left: 75vh; /* Позиция контейнера (можно поменять на другие значения) */
+}
+.smoke {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: gray;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: smoke-animation 1s linear infinite;
+}
+@keyframes smoke-animation {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(40px, -40px) scale(1.5); /* Добавляем горизонтальное движение */
+        opacity: 0.3;
+    }
+    100% {
+        transform: translate(80px, -80px) scale(2); /* Увеличиваем перемещение в горизонтальном направлении */
+        opacity: 0;
+    }
+}
+@keyframes move-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100vw); /* Перемещаем машину за экран */
+    }
+}
+
+.car {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    background: url('skyline.png') no-repeat center/contain;
+    cursor: pointer;
+    transition: transform 1s ease-in-out; /* Для плавности анимации */
+}
+
+.move-left {
+    animation: move-left 5s forwards; /* Включаем анимацию */
+}
