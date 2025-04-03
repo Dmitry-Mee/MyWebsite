@@ -1,15 +1,80 @@
 body {
-    display: flex;
+    font-size: 15px;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #87CEEB;
     overflow: hidden;
 }
+.container{
+    max-width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.button{
+    letter-spacing: 0.5px;
+    line-height: 52px;
+    padding: 0 40px;
+    color: #fff;
+    background-repeat: 4px;
+    background-color: #28387A;
+}
+
+
+.header{
+    font-weight: 700;
+    color: #424551; 
+}
+
+.header__logo{
+    margin-right: 60px;
+}
+.logo img{
+    width: 150px;
+    height: auto;    
+}
+.header__nav{
+    margin-right: auto;
+}
+
+.header__top-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-list{
+    display: flex;
+}
+
+.header__nav-link{
+    line-height: 1.6;
+}
+
+.header__btn-box{
+    display: flex;
+    align-items: center;
+}
+
+.header__user-nav{
+    display: flex;
+}
+
+.heaser__nav-item{
+    margin-right: 40px;
+}
+.header__nav-item-child{
+    margin-right: 0;
+}
+
+/*----------------*/
+
 .car {
     position: relative;
     width: 800px;
     height: 280px;
+    top: 100px;
+    left: 60vh;
     background: url('skyline.png') no-repeat center/100%;
     cursor: pointer;
 }
@@ -50,7 +115,7 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-30vw); /* Перемещаем машину за экран */
+        transform: translateX(-25vw); /* Перемещаем машину за экран */
     }
 }
 
