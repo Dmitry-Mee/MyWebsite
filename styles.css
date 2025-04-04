@@ -1,5 +1,5 @@
 body {
-    background: #000000 url("bg.jpg") no-repeat center / cover;
+    background: #000000 url("bg.jpg") no-repeat center;
     font-size: 16px;
     justify-content: center;
     align-items: center;
@@ -89,8 +89,8 @@ body {
 }
 .title{
     font-weight: 900;
-    font-size: 64px;
-    line-height: 130%;
+    font-size: 40px;
+    line-height: 120%;
     letter-spacing: 1px;
     max-width: 500px;
 }
