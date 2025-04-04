@@ -1,5 +1,6 @@
 body {
-    font-size: 15px;
+    background: #000000 url("bg.jpg") no-repeat center / cover;
+    font-size: 16px;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -12,14 +13,18 @@ body {
 }
 
 .button{
+    display: inline-block;
     letter-spacing: 0.5px;
     line-height: 52px;
     padding: 0 40px;
     color: #fff;
-    background-repeat: 4px;
+    border-radius: 4px;
     background-color: #28387A;
+    transition: .3s;
 }
-
+.button:hover{
+    transform: scale(1.05);
+}
 
 .header{
     font-weight: 700;
@@ -30,8 +35,9 @@ body {
     margin-right: 60px;
 }
 .logo img{
-    width: 150px;
-    height: auto;    
+    width: 100px;
+    height: auto; 
+    border-radius: 5px;   
 }
 .header__nav{
     margin-right: auto;
@@ -41,6 +47,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 
 .header__nav-list{
@@ -49,42 +56,67 @@ body {
 
 .header__nav-link{
     line-height: 1.6;
+    white-space: nowrap;
 }
-
+.header__nav-link:hover{
+    color: blue;
+    transition: all .3s;
+}
 .header__btn-box{
     display: flex;
     align-items: center;
+    white-space: nowrap;   
 }
-
+.header__top-btn{
+    margin-right: 36px;
+}
 .header__user-nav{
     display: flex;
+    
 }
-
-.heaser__nav-item{
+.header__user-btn{
+    
+}
+.header__user-btn:hover{
+    color: blue;
+    transition: all .3s;
+}
+.header__nav-item{
     margin-right: 40px;
 }
 .header__nav-item-child{
     margin-right: 0;
 }
-
+.title{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    max-width: 500px;
+}
+.main{
+    margin-bottom: 16px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    justify-content: space-between;
+}
 /*----------------*/
 
 .car {
     position: relative;
-    width: 800px;
-    height: 280px;
+    width: 600px;
+    height: 180px;
     top: 100px;
     left: 60vh;
     background: url('skyline.png') no-repeat center/100%;
     cursor: pointer;
 }
 .car:hover {
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+    filter: drop-shadow(0 0 20px rgba(0, 64, 255, 0.8));
 }
 .smoke-container {
     position: absolute;
-    top: 225px;
-    left: 800px;
+    top: 170px;
+    left: 600px;
 }
 .smoke {
     position: absolute;
