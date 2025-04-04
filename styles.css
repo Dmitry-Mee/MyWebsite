@@ -1,5 +1,5 @@
 body {
-    background: url("bg.jpg") no-repeat center / cover;
+    background:#E9F1F0 url("bg.jpg") no-repeat center / cover;
     font-size: 16px;
     justify-content: center;
     align-items: center;
@@ -8,15 +8,11 @@ body {
 }
 p {
     display: block;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
 }
 .container{
     max-width: 1260px;
     padding: 0 15px;
     margin: 0 auto;
-
 }
 
 .button{
