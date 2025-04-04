@@ -1,15 +1,22 @@
 body {
-    background: #000000 url("bg.jpg") no-repeat center;
+    background: url("bg.jpg") no-repeat center / cover;
     font-size: 16px;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
+    overflow:scroll;
+}
+p {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
 .container{
     max-width: 1260px;
     padding: 0 15px;
     margin: 0 auto;
+
 }
 
 .button{
@@ -38,6 +45,10 @@ body {
     width: 100px;
     height: auto; 
     border-radius: 5px;   
+}
+.hero__image{
+    width: 600px;
+    height: auto;
 }
 .header__nav{
     margin-right: auto;
@@ -87,6 +98,11 @@ body {
 .header__nav-item-child{
     margin-right: 0;
 }
+.cont__hello{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .title{
     font-weight: 900;
     font-size: 40px;
@@ -98,6 +114,7 @@ body {
     margin-bottom: 16px;
     font-size: clamp(2rem, 4vw, 3rem);
     justify-content: space-between;
+    
 }
 /*----------------*/
 
