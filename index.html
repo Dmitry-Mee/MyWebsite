@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <div class="container">
         <header class="header">
             <div class="header__top">
                 <div class="header__top-inner">
@@ -21,10 +20,11 @@
                     <nav class="header__nav">
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
-                                <a href="#" target=_blank class="header__nav-link">Обо мне</a>
+                                <a href="#about" target=_blank rel="noopener noreferrer" class="header__nav-link">Обо мне
+                                </a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" target=_blank class="header__nav-link">Опыт работы</a>
+                                <a href="#projects" target=_blank class="header__nav-link">Опыт работы</a>
                             </li>
                             <li class="header__nav-item">
                                 <a href="https://t.me/dmitry_mee" target=_blank class="header__nav-link">Telegram</a>
@@ -33,7 +33,7 @@
                                 <a href="http://instagram.com/dmitry_mee" target=_blank class="header__nav-link">Instagram</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" target=_blank class="header__nav-link">Поддержать меня</a>
+                                <a href="#encourage" target=_blank class="header__nav-link">Поддержать меня</a>
                             </li>
                         </ul>
                     </nav>
@@ -48,26 +48,25 @@
                 </div>
             </div>
         </header>
-        <div class="main">
+        <main class="main">
             <div class="cont__hello">
-                <div class="hello">
+                <section class="hello">
                     <h1 class="title">Привет, я Дима!</h1>
                     <p>Будем знакомы</p>
-                </div>
-                <img src="hero_image.svg" alt="" class="hero__image">
+                </section>
+                <img src="hero_image.svg" alt="Иллюстрация разработчика" class="hero__image">
             </div>
-            <div class="about__me">
+            <section class="about__me">
                 <p class="me">Frontend-разработчик из Екатеринбурга (Россия), который ищет развития и профессионального роста</p>
                 <p class="interface">Пришёл во frontend-разработку, чтобы разрабатывать крутые интерфейсы и максимально улучшать
                     пользовательский опыт</p>
                 <p class="resurses">Мечтаю заработать на Nissan Skyline</p>
-            </div>
+            </section>
             <div class="car" id="car">
                 <div class="smoke-container" id="smoke-container"></div>
             </div>
-        </div>
-    </div>
+        </main>
+        <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
